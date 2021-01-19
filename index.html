@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>时区示例</title><style>body {
+      margin: 0;
+      padding: 0 15px;
+      background: aliceblue;
+      display: flex;
+      justify-content: center;
+    }
+    p { margin: 0; }
+    .title { margin-right: 15px; }
+    .box {
+      display: flex;
+      align-items: center;
+      margin-top: 100px;
+    }
+    select, button {
+      width: 200px;
+      border: none;
+      outline: none;
+      background: none;
+    }
+    .select-entity {
+      padding: 3px 7px;
+      font-size: 14px;
+      color: gray;
+      border: 1px solid #ccc;
+    }
+    .select-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    .select-title {
+      font-size: 14px;
+      color: gray;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .box {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+      }
+      .select-entity {
+        margin-top: 15px;
+      }
+      .select-wrapper {
+        align-items: baseline;
+        flex-direction: column;
+      }
+      .select-title {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    }</style></head><body><div id="app"><div class="box"><p class="title">基本时区筛选</p><div class="select-wrapper"><select class="select-entity select1" name="" id=""><option value="">请选择</option></select><p class="select-title">请选择...</p></div></div><div class="box"><p class="title">亚洲地区筛选</p><div class="select-wrapper"><select class="select-entity select2" name="" id=""><option value="">请选择</option></select><p class="select-title">请选择...</p></div></div></div><script src="index.js"></script></body></html>
