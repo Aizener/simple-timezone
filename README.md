@@ -2,14 +2,14 @@
 [一看就明白的超简单示例](https://aizener.github.io/simple-timezone/)
 
 ### 安装&使用
-```bash
+```shell
 npm install --save simple-timezone
 ```
 ```js
 import Timezone from 'simple-timezone'
 
 const tz = new Timezone()
-console.log(tz.getDate('HongKong', 'yyyy年mm月dd日 hh时MM分ss秒'))
+console.log(tz.getDate('HongKong', 'yyyy年mm月dd日 hh时MM分ss秒'))  // getDate第二个参数可不传，默认yyyy-mm-dd hh-MM-ss
 ```
 
 ### API
